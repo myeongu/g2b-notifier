@@ -53,10 +53,7 @@ logger = logging.getLogger(__name__)
 # ──────────────────────────────────────────────
 
 # 용역 입찰공고 엔드포인트 (일반용역 + 기술용역 모두 포함)
-ENDPOINTS = {
-    "용역": "https://apis.data.go.kr/1230000/ad/BidPublicInfoService",
-}
-
+ENDPOINTS = "https://apis.data.go.kr/1230000/ad/BidPublicInfoService"
 
 def fetch_bids(from_dt: str, to_dt: str, endpoint_name: str = "용역") -> list:
     """
